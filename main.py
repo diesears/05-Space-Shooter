@@ -40,6 +40,8 @@ HIT_SCORE = 10
 
 KILL_SCORE = 100
 
+INITIAL_VELOCITY = 3
+
 
 
 class Bullet(arcade.Sprite):
@@ -97,15 +99,17 @@ class Player(arcade.Sprite):
 
 
 class Enemy(arcade.Sprite):
-
+    
     def __init__(self, position):
 
 
         super().__init__("assets/enemy.png", 0.5)
 
         self.hp = ENEMY_HP
-
-        (self.center_x, self.center_y) = position
+    
+   
+        
+        
 
 
 
@@ -147,22 +151,18 @@ class Window(arcade.Window):
 
     def setup(self):
 
-        '''
-
-        Set up enemies
-
-        '''
+        enemy = ['enemy']
 
         for i in range(NUM_ENEMIES):
 
-            x = 120 * (i+.0001) + 40
-
-            y = 500
-
-            enemy = Enemy((x,y))
-
-            self.enemy_list.append(enemy)            
-
+            x = random.randint(MARGIN,SCREEN_WIDTH-MARGIN)
+            y = random.randint(MARGIN,SCREEN_HEIGHT-MARGIN)
+            self.enemy_sprite = arcade.Sprite("assets/enemy.png".format(enemy=enemy), 0.5)
+            self.enemy_sprite.center_x = x 
+            self.enemy_sprite.center_y = y
+            self.enemy_sprite.mass = 1
+            self.enemy_sprite.hp = 100
+            self.enemy_list.append(self.enemy_sprite)
 
 
     def update(self, delta_time):
@@ -204,6 +204,7 @@ class Window(arcade.Window):
         self.bullet_list.draw()
 
         self.enemy_list.draw()
+        
 
 
 

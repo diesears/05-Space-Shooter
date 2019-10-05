@@ -1,2 +1,1 @@
-# 05-Space-Shooter
-My first 2D game
+Hello! Welcome to Space Shooter, my first ever 2D game in python arcade. If you run the file the enemy ships will generate in random locations. Use the mouse to take them out. This file uses basic sprites and physics to make a simple 2D game.
