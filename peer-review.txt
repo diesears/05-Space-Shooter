@@ -1,0 +1,37 @@
+Name: Christopher Butcher
+Date: October 18th, 2019
+Project: PR-05-Space-Shooter
+Peer's repository: https://github.com/diesears/05-Space-Shooter
+
+
+
+What is something you learned by reviewing your peer's project?
+How to close the window upon killing the last enemy.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+Random enemy placement.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+Have the enemies shoot back or move.
+ 
+
+What could have been clearer or better commented?
+Nothing, the code is very clean.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+No.
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+The process used to make the game.
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+It runs smoothly and the sprites you chose are great!
